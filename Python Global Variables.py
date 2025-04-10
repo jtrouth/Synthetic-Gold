@@ -5,9 +5,9 @@
 
 # COMMAND ----------
 
-state = 'WA'
-stateExtended = 'Washington'
-stateFIPS = '53'
+state = 'UT'
+stateExtended = 'Utah'
+stateFIPS = '49'
 
 # COMMAND ----------
 
@@ -96,7 +96,7 @@ pd.options.display.max_rows = 20
 # COMMAND ----------
 
 # DBTITLE 1,Define paths
-root_synthetic_gold = f"path/to/Synthetic{stateExtended}"
+root_synthetic_gold = f"gs://jt-databricks-gcs/Synthetic-Gold/{stateExtended}"
 
 synthetic_gold_data_path = f"{root_synthetic_gold}/Data"
 synthetic_gold_exchange = f'{root_synthetic_gold}/Data/Exchange'
